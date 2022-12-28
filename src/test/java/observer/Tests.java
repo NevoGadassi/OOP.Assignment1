@@ -11,20 +11,15 @@ public class Tests {
     // stub method to check external dependencies compatibility
     @Test
     public void test(){
-
         GroupAdmin admin = new GroupAdmin();
         ConcreteMember member1 = new ConcreteMember();
         admin.register(member1);
         admin.append("test the size of the object");
-
-
         logger.info(()-> JvmUtilities.objectFootprint(admin));
         logger.info(()-> JvmUtilities.objectFootprint(member1));
         logger.info(()-> JvmUtilities.objectTotalSize(member1));
         logger.info(()-> JvmUtilities.objectTotalSize(admin));
         logger.info(() -> JvmUtilities.jvmInfo());
-
-
     }
 
     @Test
@@ -39,20 +34,15 @@ public class Tests {
             memberslist.add(member);
         }
         admin.append("we register 10 members");
-
         logger.info(()-> JvmUtilities.objectFootprint(admin));
         logger.info(()-> JvmUtilities.objectTotalSize(admin));
-
         for (int i = 0 ; i< 5 ; i++)
         {
             admin.unregister(memberslist.get(i));
         }
         admin.append("we unregister 5 members");
-
         logger.info(()-> JvmUtilities.objectFootprint(admin));
         logger.info(()-> JvmUtilities.objectTotalSize(admin));
-
-
         logger.info(() -> JvmUtilities.jvmInfo());
         //we can see in the second time total memory is lower
 
@@ -66,17 +56,12 @@ public class Tests {
         str.append("check the size of member after undo");
         str.append("check the size of member before undo");
         member.update(str);
-
         logger.info(()-> JvmUtilities.objectFootprint(member, str));
         logger.info(()-> JvmUtilities.objectTotalSize(member));
-
         str.undo();
         member.update(str);
-
         logger.info(()-> JvmUtilities.objectFootprint(member));
         logger.info(()-> JvmUtilities.objectTotalSize(member));
-
-
         logger.info(() -> JvmUtilities.jvmInfo());
         //we can see in the second time total memory is lower
 
