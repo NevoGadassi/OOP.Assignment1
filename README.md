@@ -1,8 +1,6 @@
 # OOP.Assignment1
 
- <p align="center">
-Nevo Gadassi and  Shani Basteker
-</p>
+
  Describe the assignment:
 The assignment is to extend the new functionality of UndoableStringBuilder.
 
@@ -38,7 +36,9 @@ update- update member's UndoableStringBuilder to the GroupAdmin one.
 
 
 
-
+ <p align="center">
+Nevo Gadassi and  Shani Basteker
+</p>
  
 
 
