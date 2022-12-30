@@ -28,6 +28,7 @@ we built GroupAdmin class that Contains members and updates them on any changes 
  
  ## ConcreteMember 
 This class represent a specific member and his UndoableStringBuilder
+
 update- update member's UndoableStringBuilder to the GroupAdmin one.
 
 ## UML:
