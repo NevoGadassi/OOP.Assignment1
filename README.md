@@ -7,6 +7,10 @@ Nevo Gadassi and  Shani Basteker
 The assignment is to extend the new functionality of UndoableStringBuilder.
 
 Control the updates of UndoableStringBuilder by observer (design pattern for code).
+ <p align="center">
+<img  src="observer.png"/>
+</p>
+
 
 
 ## GroupAdmin 
@@ -25,6 +29,13 @@ we built GroupAdmin class that Contains members and updates them on any changes 
  ## ConcreteMember 
 This class represent a specific member and his UndoableStringBuilder
 update- update member's UndoableStringBuilder to the GroupAdmin one.
+
+## UML:
+ <p align="center">
+<img height="500" width="800" src="uml.png"/>
+</p>
+
+
 
 
  
