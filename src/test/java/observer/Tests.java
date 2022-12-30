@@ -23,7 +23,7 @@ public class Tests {
     }
 
     @Test
-    public void GroupAdmin_test()
+    public void GroupAdmin_testpartb()
     {
         GroupAdmin admin = new GroupAdmin();
         ArrayList<Member> memberslist = new ArrayList<>();
@@ -49,7 +49,7 @@ public class Tests {
 
     }
     @Test
-    public void ConcreteMembertest()
+    public void ConcreteMembertestpartb()
     {
         ConcreteMember member = new ConcreteMember();
         UndoableStringBuilder str = new UndoableStringBuilder();
